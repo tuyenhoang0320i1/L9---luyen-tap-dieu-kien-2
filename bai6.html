@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6: Giải phương trình bậc 1.</title>
+</head>
+<body>
+<script>
+    function myFunction(){
+        let b = +(document.getElementById("variableb"));
+        let a = +(document.getElementById("variablea"));
+
+
+        if (a == 0 && b == 0){
+            alert('Phương trình vô số nghiệm');
+        }
+        else if (a != 0 && b == 0){
+            alert('Phương trình có nghiệm x = 0');
+        }
+        else if (a == 0 && b != 0){
+            alert("Phương trình vô nghiệm");
+        }
+        else {
+            alert('Phương trình có nghiệm x = ' + (-b/a));
+        }
+
+    }
+
+
+
+</script>
+
+
+<form method="post">
+
+    <br>Nhap gia tri a:
+    <input id="variablea" type="text" name="a" value="">
+    <br> Nhap gia tri b:
+    <input id="variableb" type="text" name="b" value="">
+    <input type="button" value="Result" onclick="myFunction();">
+</form>
+
+</body>
+</html>

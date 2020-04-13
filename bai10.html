@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10: Viết chương trình tính giá điện.</title>
+</head>
+<body>
+<img src="giadien.PNG"/>
+<script>
+    let number;
+    let p = parseInt(prompt("Nhập vào số điện tiêu thụ(kWh): ", ''));
+
+    if (p <=50) {
+        number = 1678*p;
+    } else if (p <=100){
+        number = 1734*p;
+    } else if (p <=200){
+        number = 2014*p;
+    } else if (p <=300){
+        number = 2539*p;
+    } else if (p <=400){
+        number = 2834*p;
+    } else if (400 < p){
+        number = 2927*p;
+    } else {}
+    alert("Giá điện tiêu thụ là: " + number + " VNĐ");
+
+</script>
+
+</body>
+</html>
