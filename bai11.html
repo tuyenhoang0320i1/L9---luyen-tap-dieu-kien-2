@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11: Viết chương trình tính thuế thu nhập cá nhân.</title>
+</head>
+<body>
+<script>
+    let taxPersonal;
+    let salary = parseFloat(prompt("Nhập vào thu nhập cá nhân (triệu đồng/tháng) (đã tính giảm trừ"),'');
+    if   (salary <= 5000000 ) {
+        taxPersonal = (salary*0.05);
+    }   else if (salary <= 10000000){
+        taxPersonal = (salary*0.1);
+    }   else if (salary <= 18000000){
+        taxPersonal = (salary*0.15);
+    }   else if (salary <=32000000){
+        taxPersonal = (salary*0.2);
+    }   else if (salary <= 52000000){
+        taxPersonal = (salary*0.25);
+    }   else if (salary <= 80000000){
+        taxPersonal = (salary*0.3);
+    }   else if (80000000 < salary){
+        taxPersonal = (salary*0.35);
+    } else {}
+    alert("thue: " + taxPersonal + " VNĐ");
+</script>
+</body>
+</html>
