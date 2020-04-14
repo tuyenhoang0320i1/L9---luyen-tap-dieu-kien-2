@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</title>
+</head>
+<body>
+<img src="lai%20suat%20ngan%20hang.PNG">
+<script>
+    // Tien lai = so tien gui x lai suat (% nam)/12 x so thang gui
+//    Tien lai =  so tien gui x lai suat (%) x so ngay gui /360
+    let Interest;
+    let deposit = parseFloat(prompt("Nhập vào số tiền gửi: ",''));
+    let month = parseFloat(prompt("Nhập vào số tháng gửi: ",''));
+    if ( month <= 1){
+        Interest = deposit * (0.3/12) * month;
+    } else if(month <= 2){
+        Interest = deposit * (4.30/12) * month;
+    } else if(month <= 3){
+        Interest = deposit * (4.30/12) * month;
+    } else if(month <= 4){
+        Interest = deposit * (4.80/12) * month;
+    } else if(month <= 5){
+        Interest = deposit * (4.80/12) * month;
+    } else if(month <= 6){
+        Interest = deposit * (5.30/12) * month;
+    } else if(month <= 7){
+        Interest = deposit * (5.30/12) * month;
+    } else if(month <= 8){
+        Interest = deposit * (5.30/12) * month;
+    } else if(month <= 9){
+        Interest = deposit * (5.30/12) * month;
+    } else if(month <= 10){
+        Interest = deposit * (5.30/12) * month;
+    } else if(month <= 11){
+        Interest = deposit * (5.30/12) * month;
+    } else if(month < 12){
+        Interest = deposit * (5.30/12) * month;
+    } else if(12 < month) {
+        Interest = deposit * (6.8 / 12) * month;
+    }
+    alert("Tien lai la: " + Interest + "VNĐ");
+</script>
+</body>
+</html>
